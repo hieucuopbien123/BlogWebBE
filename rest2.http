@@ -1,0 +1,167 @@
+### https://hostnodejs-388808.uw.r.appspot.com
+
+### Test
+GET https://hostnodejs-388808.uw.r.appspot.com
+
+### Test ảnh
+GET https://hostnodejs-388808.uw.r.appspot.com/images/blogs_1686328704262.png
+
+### Signup
+POST https://hostnodejs-388808.uw.r.appspot.com/api/v1/auth/signup
+Content-Type: application/json
+
+{
+  "username": "hieucuopbien",
+  "password": "123456",
+  "email": "hieucuopbien12345@gmail.com",
+  "displayname": "hieu"
+}
+
+### Sign in with gmail
+POST https://hostnodejs-388808.uw.r.appspot.com/api/v1/auth/signinwithgmail
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImY5N2U3ZWVlY2YwMWM4MDhiZjRhYjkzOTczNDBiZmIyOTgyZTg0NzUiLCJ0eXAiOiJKV1QifQ.eyJuYW1lIjoiU3BlZWR5IERlc2lnbiIsInBpY3R1cmUiOiJodHRwczovL2xoMy5nb29nbGV1c2VyY29udGVudC5jb20vYS9BQWNIVHRmVEp0V0hNVVN0eFhvckdjWWJMYjc5RHNmT2M2NDdVYlhUNU1DRWhEU0laUT1zOTYtYyIsImlzcyI6Imh0dHBzOi8vc2VjdXJldG9rZW4uZ29vZ2xlLmNvbS9sb2dpbi00OTU2NiIsImF1ZCI6ImxvZ2luLTQ5NTY2IiwiYXV0aF90aW1lIjoxNjg4MjY5NjE1LCJ1c2VyX2lkIjoiYlk2TFFVRXA4YlBDUkVBWHUyV0VqV21wUFBaMiIsInN1YiI6ImJZNkxRVUVwOGJQQ1JFQVh1MldFaldtcFBQWjIiLCJpYXQiOjE2ODgyNjk2MTUsImV4cCI6MTY4ODI3MzIxNSwiZW1haWwiOiJoaWV1Y3VvcGJpZW4xMjM0QGdtYWlsLmNvbSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7Imdvb2dsZS5jb20iOlsiMTEzNzAxNzgzOTA2MTcxODgwNTM5Il0sImVtYWlsIjpbImhpZXVjdW9wYmllbjEyMzRAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoiZ29vZ2xlLmNvbSJ9fQ.E0dPh-zVQfKLkx82lS7T8KHbLEQObiQd2kCklnC4Xx8ImIv_MmsbVkQlH2QdAt5Bi8s_QkJU4uJ5kzWxitV6_g_HTmcTYgAdIXzjZ_as_2AKvyRhPa5o4j_tUF-7dHa3BqQPtBq9RwZMK7J-76-KBTQHVqnSxVojhSnqIr4smlY_GgWf2EXyrZUO2qnNuyRuM6FFWS_yfTujmHxeGg7z-i8wWxGI0I1moiMrpujmXQErBUySHsChqsowiOhSK_uC1kPrIUiObRpS9nZZDXueSEHuWmalPTB0k_0pe7PkNOofzo5O9R0a_UwRdorDNhN5p0HNlgdm_63kwxAsPFoQrg
+
+### Xác thực mail signup
+POST https://hostnodejs-388808.uw.r.appspot.com/api/v1/auth/verifySignup/ed6b76ec-2b8e-47cb-9fdd-bb601e0deceb
+
+### Sign in
+POST https://hostnodejs-388808.uw.r.appspot.com/api/v1/auth/signin
+Content-Type: application/json
+
+{
+  "username": "hieucuopbien12345",
+  "password": "1234567"
+}
+
+### Lấy user
+GET https://hostnodejs-388808.uw.r.appspot.com/api/v1/user/abbdeb81-c929-4c02-8532-a8743f027310
+
+### Edit user / Gửi datetime bằng new Date() trực tiếp
+PATCH https://hostnodejs-388808.uw.r.appspot.com/api/v1/user/edit
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYmJkZWI4MS1jOTI5LTRjMDItODUzMi1hODc0M2YwMjczMTAiLCJpYXQiOjE2ODg2OTM0ODcsImV4cCI6MTY4ODcwMDY4N30._X9vvaNfGQqnws5WbCu3_TQWNl_jImRnWEVfLR_BmIA
+
+{
+  "gender": 1,
+  "bio": "This is my bi1o",
+  "dateofbirth": "Fri Jun 09 2023 23:52:08 GMT+0700 (Indochina Time)"
+}
+
+### Tạo blog
+POST https://hostnodejs-388808.uw.r.appspot.com/api/v1/blog/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYmJkZWI4MS1jOTI5LTRjMDItODUzMi1hODc0M2YwMjczMTAiLCJpYXQiOjE2ODg3MDI2NzQsImV4cCI6MTY4ODcwOTg3NH0.__MirdJplmuovMlBR9awPVQ23q-aheqb3o9Die7RJEc
+
+{
+  "category": 1,
+  "title": "This is test title",
+  "content": "This is a very short content",
+  "parentId": null,
+  "published": false,
+  "meta": "This is meta text"
+}
+
+### edit blog
+PATCH https://hostnodejs-388808.uw.r.appspot.com/api/v1/blog/edit/1f9c49fb-0c48-454f-8fcc-5df8cfbd6d18
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYmJkZWI4MS1jOTI5LTRjMDItODUzMi1hODc0M2YwMjczMTAiLCJpYXQiOjE2ODg3MDI2NzQsImV4cCI6MTY4ODcwOTg3NH0.__MirdJplmuovMlBR9awPVQ23q-aheqb3o9Die7RJEc
+
+{
+  "category": 3
+}
+
+### Lấy blog
+GET https://hostnodejs-388808.uw.r.appspot.com/api/v1/blog/get/e4708274-dd0d-46a7-ae15-6e81bcffcc6b
+
+### Lấy mọi blog của 1 user
+GET https://hostnodejs-388808.uw.r.appspot.com/api/v1/blog/getallblogofuser/abbdeb81-c929-4c02-8532-a8743f027310
+
+### Tăng lượt view blog => bỏ, lúc get sẽ tự tăng view
+POST https://hostnodejs-388808.uw.r.appspot.com/api/v1/blog/view/e1c020d5-71a1-49f3-8078-73ea0c2b8621
+
+### Xóa blog
+DELETE https://hostnodejs-388808.uw.r.appspot.com/api/v1/blog/e4708274-dd0d-46a7-ae15-6e81bcffcc6b
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYmJkZWI4MS1jOTI5LTRjMDItODUzMi1hODc0M2YwMjczMTAiLCJpYXQiOjE2ODg3MDI5MzksImV4cCI6MTY4ODcxMDEzOX0.yETouKm9Rut03k0nWaDNbXrP94CZTgidXQWtqDesxMk
+
+### Thả tim và bỏ thả tim
+POST https://hostnodejs-388808.uw.r.appspot.com/api/v1/blog/heart/1f9c49fb-0c48-454f-8fcc-5df8cfbd6d18
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYmJkZWI4MS1jOTI5LTRjMDItODUzMi1hODc0M2YwMjczMTAiLCJpYXQiOjE2ODg3MDI2NzQsImV4cCI6MTY4ODcwOTg3NH0.__MirdJplmuovMlBR9awPVQ23q-aheqb3o9Die7RJEc
+
+{
+  "heart": true
+}
+
+### Thả haha và bỏ thả haha
+POST https://hostnodejs-388808.uw.r.appspot.com/api/v1/blog/haha/e4708274-dd0d-46a7-ae15-6e81bcffcc6b
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYmJkZWI4MS1jOTI5LTRjMDItODUzMi1hODc0M2YwMjczMTAiLCJpYXQiOjE2ODg2OTM0ODcsImV4cCI6MTY4ODcwMDY4N30._X9vvaNfGQqnws5WbCu3_TQWNl_jImRnWEVfLR_BmIA
+
+{
+  "haha": true
+}
+
+### Tạo comment
+POST https://hostnodejs-388808.uw.r.appspot.com/api/v1/comment/1f9c49fb-0c48-454f-8fcc-5df8cfbd6d18
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYmJkZWI4MS1jOTI5LTRjMDItODUzMi1hODc0M2YwMjczMTAiLCJpYXQiOjE2ODkyMTA0NjQsImV4cCI6MTY5MDA3NDQ2NH0.vYVTaAtvi8tY_7kMStfqWF5iocOBK4DKBf3GAhItM7g
+
+{
+  "content": "This is a sample comment",
+  "parentId": null
+}
+
+### Edit comment
+PATCH https://hostnodejs-388808.uw.r.appspot.com/api/v1/comment/7587e5f8-2bd9-4264-813a-bfaf18ba58bd
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYmJkZWI4MS1jOTI5LTRjMDItODUzMi1hODc0M2YwMjczMTAiLCJpYXQiOjE2ODkyMTA0NjQsImV4cCI6MTY5MDA3NDQ2NH0.vYVTaAtvi8tY_7kMStfqWF5iocOBK4DKBf3GAhItM7g
+
+{
+  "content": "This is a sample comment 2"
+}
+
+### xóa comment
+DELETE https://hostnodejs-388808.uw.r.appspot.com/api/v1/comment/abbdeb81-c929-4c02-8532-a8743f027310/7956a441-9cc8-4801-8a23-2f989e116a3d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJhYmJkZWI4MS1jOTI5LTRjMDItODUzMi1hODc0M2YwMjczMTAiLCJpYXQiOjE2ODg3MDI5MzksImV4cCI6MTY4ODcxMDEzOX0.yETouKm9Rut03k0nWaDNbXrP94CZTgidXQWtqDesxMk
+
+### Lấy 1 comment cụ thể
+GET https://hostnodejs-388808.uw.r.appspot.com/api/v1/comment/35b07954-9cc5-4f60-b62e-96963b7fd6fa
+
+### Lấy mọi comment của 1 blog
+GET https://hostnodejs-388808.uw.r.appspot.com/api/v1/blog/comment/5f3c9fa5-6317-4ccd-870a-4d40af5290aa
+
+
+### Tính năng bổ sung 
+
+### Đổi mk của user
+POST https://hostnodejs-388808.uw.r.appspot.com/api/v1/user/changepassword
+Content-Type: application/json
+
+{
+  "userId": "abbdeb81-c929-4c02-8532-a8743f027310",
+  "oldPassword": "1234567",
+  "newPassword": "1234567"
+}
+
+### Search, filter, phân trang blog của 1 user / Có 5 category chạy từ 0 tới 4 / Có getUser=true sẽ search cả user theo displayname có searchtext
+GET https://hostnodejs-388808.uw.r.appspot.com/api/v1/search?searchtext=T&orderby=title&orderdirection=asc&userid=ff604215-9b08-4cd3-ad01-30fb43f292f5&page=1&perpage=10&category=1,2&getUser=true
+
+### Search blog 
+GET https://hostnodejs-388808.uw.r.appspot.com/api/v1/search?searchtext=T&orderby=title&orderdirection=asc&userid=ff604215-9b08-4cd3-ad01-30fb43f292f5&page=1&perpage=10&category=1,2
+
+### Lấy user heart và haha
+GET https://hostnodejs-388808.uw.r.appspot.com/api/v1/blog/heart/1f9c49fb-0c48-454f-8fcc-5df8cfbd6d18/abbdeb81-c929-4c02-8532-a8743f027310
+
+### Socket VD frontend bắt sự kiện thả tim, tương tự có sự kiện: haha, comment
+# useEffect(() => {
+#   const socket = io('https://hostnodejs-388808.uw.r.appspot.com');
+#   const userId = 'ff604215-9b08-4cd3-ad01-30fb43f292f5'; 
+#   socket.emit('login', userId);
+#   socket.on('heart', (notification) => {
+#     console.log('Received notification:', notification);
+#   });
+#   return () => {
+#     socket.disconnect();
+#   };
+# }, []);
